@@ -1,5 +1,2 @@
-User-agent: TelegramBot
-Allow: /
-
 User-agent: *
-Disallow: /
+Allow: /
