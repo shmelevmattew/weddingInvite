@@ -35,6 +35,101 @@ $(function(){
  .form-field input, .form-field textarea {margin: 0 auto; display: block;}
  </style> <div class="form-field"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Ваше Имя и Фамилия *</label> <input type="text" id="guest-name" placeholder="Иван Иванов/Мария Иванова" style="width: 100%; padding: 8px 10px; border: 1px solid #bbbbbb; border-radius: 5px; font-size: 14px; font-family: Montserrat; box-sizing: border-box;"> </div> <div class="form-radio-group"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Будете ли вы присутствовать на свадьбе? *</label> <div style="display: flex; flex-direction: column; gap: 6px;"> <label style="display: flex; align-items: center; cursor: pointer; font-size: 14px;"> <input type="radio" name="attendance" value="Да, с удовольствием!" style="margin-right: 8px;"> <span>Да, с удовольствием!</span> </label> <label style="display: flex; align-items: center; cursor: pointer; font-size: 14px;"> <input type="radio" name="attendance" value="Буду с парой!" style="margin-right: 8px;"> <span>Буду с парой!</span> </label> <label style="display: flex; align-items: center; cursor: pointer; font-size: 14px;"> <input type="radio" name="attendance" value="К сожалению, не смогу." style="margin-right: 8px;"> <span>К сожалению, не смогу.</span> </label> </div> </div> <div class="form-field" style="display: none; opacity: 0; transition: opacity 0.3s ease, max-height 0.3s ease; max-height: 0; overflow: hidden;" id="partner-field"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Имя и Фамилия вашей пары</label> <input type="text" id="partner-name" placeholder="Иван Иванов/Мария Иванова" style="width: 100%; padding: 8px 10px; border: 1px solid #bbbbbb; border-radius: 5px; font-size: 14px; font-family: Montserrat; box-sizing: border-box;"> </div> <div class="form-radio-group"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Будут ли с вами дети? *</label> <div style="display: flex; gap: 15px;"> <label style="display: flex; align-items: center; cursor: pointer; font-size: 14px;"> <input type="radio" name="children" value="Да" style="margin-right: 6px;"> <span>Да</span> </label> <label style="display: flex; align-items: center; cursor: pointer; font-size: 14px;"> <input type="radio" name="children" value="Нет" style="margin-right: 6px;"> <span>Нет</span> </label> </div> </div> <div class="form-field" style="display: none; opacity: 0; transition: opacity 0.3s ease, max-height 0.3s ease; max-height: 0; overflow: hidden;" id="children-info-field"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Напишите имена и возраст детей</label> <textarea id="children-info" placeholder="Иван, 5 лет и Мария, 3 года" rows="2" style="width: 100%; padding: 8px 10px; border: 1px solid #bbbbbb; border-radius: 5px; font-size: 14px; font-family: Montserrat; box-sizing: border-box; resize: none;"></textarea> </div> <div class="form-radio-group"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Планируете ли вы присутствовать на церемонии регистрации брака в ЗАГС в 14:00?</label> <div style="display: flex; gap: 15px;"> <label style="display: flex; align-items: center; cursor: pointer; font-size: 14px;"> <input type="radio" name="zags-transport" value="Да" style="margin-right: 6px;"> <span>Да</span> </label> <label style="display: flex; align-items: center; cursor: pointer; font-size: 14px;"> <input type="radio" name="zags-transport" value="Нет" style="margin-right: 6px;"> <span>Нет</span> </label> </div> </div> <div class="form-field"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Какой алкоголь вы предпочитаете?</label> <input type="text" id="alcohol-preference" placeholder="Напишите 'нет' если не будете пить алкоголь, или укажите предпочтения" style="width: 100%; padding: 8px 10px; border: 1px solid #bbbbbb; border-radius: 5px; font-size: 14px; font-family: Montserrat; box-sizing: border-box;"> </div> <div class="form-field"> <label style="display: block; font-size: 16px; font-weight: 300; margin-bottom: 6px; color: #000;">Есть ли у вас аллергия или особые предпочтения в еде?</label> <textarea id="allergies-info" placeholder="Укажите аллергии, непереносимости или особые предпочтения в еде" rows="2" style="width: 100%; padding: 8px 10px; border: 1px solid #bbbbbb; border-radius: 5px; font-size: 14px; font-family: Montserrat; box-sizing: border-box; resize: none;"></textarea> </div> <button id="telegram-send-btn" style="width: 95%; padding: 12px; background-color: #0088cc; color: white; border: none; border-radius: 25px; font-size: 14px; font-family: Montserrat; font-weight: 400; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;">Отправить анкету!</button> </div> </div>    </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('782550585');});});</script> <!-- /T396 --> </div> <div id="rec782540025" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="396"> <!-- T396 --> <style>#rec782540025 .t396__artboard {height:710px;background-color:#eeebdf;}#rec782540025 .t396__filter {height:710px;}#rec782540025 .t396__carrier{height:710px;background-position:center center;background-attachment:scroll;background-size:cover;background-repeat:no-repeat;}@media screen and (max-width:1199px) {#rec782540025 .t396__artboard,#rec782540025 .t396__filter,#rec782540025 .t396__carrier {height:660px;}#rec782540025 .t396__filter {}#rec782540025 .t396__carrier {background-attachment:scroll;}}#rec782540025 .tn-elem[data-elem-id="1722942436082"] {z-index:3;top:-363px;left:calc(50% - 600px + 257px);width:686px;height:auto;}#rec782540025 .tn-elem.t396__elem--anim-hidden[data-elem-id="1722942436082"] {opacity:0;}#rec782540025 .tn-elem[data-elem-id="1722942436082"] .tn-atom {border-radius:0px 0px 0px 0px;background-position:center center;border-color:transparent ;border-style:solid ;}#rec782540025 .tn-elem[data-elem-id="1722942436082"] .tn-atom {-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);}#rec782540025 .tn-elem[data-elem-id="1722942436082"] .tn-atom__img {border-radius:0px 0px 0px 0px;object-position:center center;}@media screen and (max-width:1199px) {#rec782540025 .tn-elem[data-elem-id="1722942436082"] {display:table;top:-280px;left:calc(50% - 160px + -106px);width:533px;height:auto;}#rec782540025 .tn-elem[data-elem-id="1722942436082"] .tn-atom {background-size:cover;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);}}#rec782540025 .tn-elem[data-elem-id="1722942584758"] {z-index:3;top:353px;left:calc(50% - 600px + 376px);width:354px;height:auto;}#rec782540025 .tn-elem[data-elem-id="1722942584758"] .tn-atom {border-radius:0px 0px 0px 0px;background-position:center center;border-color:transparent ;border-style:solid ;}#rec782540025 .tn-elem[data-elem-id="1722942584758"] .tn-atom__img {border-radius:0px 0px 0px 0px;object-position:center center;}@media screen and (max-width:1199px) {#rec782540025 .tn-elem[data-elem-id="1722942584758"] {display:table;top:323px;left:calc(50% - 160px + 24px);width:273px;height:auto;}}#rec782540025 .tn-elem[data-elem-id="1722942621858"] {z-index:3;top:414px;left:calc(50% - 600px + 572px);width:248px;height:auto;}#rec782540025 .tn-elem[data-elem-id="1722942621858"] .tn-atom {border-radius:0px 0px 0px 0px;background-position:center center;border-color:transparent ;border-style:solid ;}#rec782540025 .tn-elem[data-elem-id="1722942621858"] .tn-atom__img {border-radius:0px 0px 0px 0px;object-position:center center;}@media screen and (max-width:1199px) {#rec782540025 .tn-elem[data-elem-id="1722942621858"] {display:table;top:371px;left:calc(50% - 160px + 121px);width:179px;height:auto;}}#rec782540025 .tn-elem[data-elem-id="1722945618355"]{color:#000000;text-align:center;z-index:3;top:544px;left:calc(50% - 600px + 333px);width:535px;height:auto;}#rec782540025 .tn-elem[data-elem-id="1722945618355"] .tn-atom {vertical-align:middle;color:#000000;font-size:20px;font-family:'Montserrat',Arial,sans-serif;line-height:1.55;font-weight:300;background-position:center center;border-color:transparent ;border-style:solid ;}@media screen and (max-width:1199px) {#rec782540025 .tn-elem[data-elem-id="1722945618355"] {display:table;top:513px;left:calc(50% - 160px + 16px);width:289px;height:auto;}#rec782540025 .tn-elem[data-elem-id="1722945618355"] {text-align:center;}#rec782540025 .tn-elem[data-elem-id="1722945618355"] .tn-atom{font-size:16px;background-size:cover;}}#rec782540025 .tn-elem[data-elem-id="1722945649481"] {z-index:3;top:578px;left:calc(50% - 600px + 445px);width:290px;height:78px;}#rec782540025 .tn-elem[data-elem-id="1722945649481"] .tn-atom{background-position:center center;border-color:transparent ;border-style:solid ;}@media screen and (max-width:1199px) {#rec782540025 .tn-elem[data-elem-id="1722945649481"] {display:table;top:544px;left:calc(50% - 160px + 10px);}}</style> <div class="t396"> <div class="t396__artboard" data-artboard-recid="782540025" data-artboard-screens="320,1200" data-artboard-height="710" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="660"> <div class="t396__carrier" data-artboard-recid="782540025"></div> <div class="t396__filter" data-artboard-recid="782540025"></div> <div class="t396__elem tn-elem tn-elem__7825400251722942436082 " data-elem-id="1722942436082" data-elem-type="image" data-field-top-value="-363" data-field-left-value="257" data-field-height-value="359" data-field-width-value="686" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="blockintoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':310,'sx':1,'sy':1,'op':1,'ro':0,'ti':3000,'ea':'0','dt':2000}]" data-field-filewidth-value="1411" data-field-fileheight-value="739" data-field-heightmode-value="hug" data-field-top-res-320-value="-280" data-field-left-res-320-value="-106" data-field-width-res-320-value="533" data-animate-sbs-opts-res-320="[{'mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','ti':'0','ea':'0','dt':'0'},{'mx':0,'my':240,'sx':'1','sy':'1','op':'1','ro':'0','ti':1300,'ea':'0','dt':'0'}]"> <div class="tn-atom"> <img class="tn-atom__img" src="pics/wl7fhf3msbzuak.png" alt="" imgfield="tn_img_1722942436082"> </div> </div> <div class="t396__elem tn-elem tn-elem__7825400251722942584758 t-animate" data-elem-id="1722942584758" data-elem-type="image" data-field-top-value="353" data-field-left-value="376" data-field-height-value="50" data-field-width-value="354" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadein" data-animate-duration="3" data-animate-mobile="y" data-field-filewidth-value="1248" data-field-fileheight-value="176" data-field-heightmode-value="hug" data-field-top-res-320-value="323" data-field-left-res-320-value="24" data-field-width-res-320-value="273"> <div class="tn-atom"> <img class="tn-atom__img" src="pics/mad8bxe6wk2qyj.png" alt="" imgfield="tn_img_1722942584758"> </div> </div> <div class="t396__elem tn-elem tn-elem__7825400251722942621858 t-animate" data-elem-id="1722942621858" data-elem-type="image" data-field-top-value="414" data-field-left-value="572" data-field-height-value="107" data-field-width-value="248" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadein" data-animate-duration="3" data-animate-mobile="y" data-field-filewidth-value="391" data-field-fileheight-value="169" data-field-heightmode-value="hug" data-field-top-res-320-value="371" data-field-left-res-320-value="121" data-field-width-res-320-value="179"> <div class="tn-atom"> <img class="tn-atom__img" src="pics/c2zh5umcgbiigy.png" alt="" imgfield="tn_img_1722942621858"> </div> </div> <div class="t396__elem tn-elem tn-elem__7825400251722945618355 t-animate" data-elem-id="1722945618355" data-elem-type="text" data-field-top-value="544" data-field-left-value="333" data-field-height-value="31" data-field-width-value="535" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="3" data-animate-distance="100" data-animate-mobile="y" data-field-textfit-value="autoheight" data-field-fontsize-value="20" data-field-top-res-320-value="513" data-field-left-res-320-value="16" data-field-width-res-320-value="289" data-field-fontsize-res-320-value="16"> <div class="tn-atom" field="tn_text_1722945618355">До свадьбы осталось:</div> </div> <div class="t396__elem tn-elem tn-elem__7825400251722945649481 t-animate" data-elem-id="1722945649481" data-elem-type="html" data-field-top-value="578" data-field-left-value="445" data-field-height-value="78" data-field-width-value="290" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="3" data-animate-distance="100" data-animate-mobile="y" data-field-top-res-320-value="544" data-field-left-res-320-value="10"> <div class="tn-atom tn-atom__html"> <script src="scripts/p27pazn8818q82.js"></script> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('782540025');});});</script> <!-- /T396 --> </div> </div> <!--/allrecords--> <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // ===== ЭКРАН ЗАГРУЗКИ =====
+    const loadingScreen = document.getElementById('loading-screen');
+    let imagesLoaded = 0;
+    let totalImages = 0;
+
+    // Функция для поиска всех изображений на странице
+    function findAllImages() {
+        const images = [];
+
+        // Найти все img элементы
+        const imgElements = document.querySelectorAll('img');
+        imgElements.forEach(img => {
+            if (img.src && img.src.trim() !== '') {
+                images.push(img);
+            }
+        });
+
+        // Найти элементы с background-image в CSS
+        const allElements = document.querySelectorAll('*');
+        allElements.forEach(element => {
+            const computedStyle = window.getComputedStyle(element);
+            const backgroundImage = computedStyle.backgroundImage;
+
+            if (backgroundImage && backgroundImage !== 'none' && backgroundImage.includes('url(')) {
+                // Создаем объект для отслеживания background изображений
+                const bgImage = {
+                    element: element,
+                    url: backgroundImage.match(/url\(["']?(.*?)["']?\)/)[1],
+                    isBackground: true
+                };
+                images.push(bgImage);
+            }
+        });
+
+        return images;
+    }
+
+    // Функция для проверки загрузки изображения
+    function checkImageLoad(image, callback) {
+        if (image.isBackground) {
+            // Для background изображений используем Image объект
+            const img = new Image();
+            img.onload = function() {
+                callback();
+            };
+            img.onerror = function() {
+                callback(); // Считаем ошибку загрузки как загруженное
+            };
+            img.src = image.url;
+        } else {
+            // Для обычных img элементов
+            if (image.complete) {
+                callback();
+            } else {
+                image.onload = function() {
+                    callback();
+                };
+                image.onerror = function() {
+                    callback(); // Считаем ошибку загрузки как загруженное
+                };
+            }
+        }
+    }
+
+    // Функция для скрытия экрана загрузки
+    function hideLoadingScreen() {
+        loadingScreen.style.opacity = '0';
+        loadingScreen.style.visibility = 'hidden';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 500);
+    }
+
+    // Начать отслеживание загрузки изображений
+    const allImages = findAllImages();
+    totalImages = allImages.length;
+
+    if (totalImages === 0) {
+        // Если нет изображений, скрываем экран сразу
+        hideLoadingScreen();
+    } else {
+        // Отслеживаем загрузку каждого изображения
+        allImages.forEach(image => {
+            checkImageLoad(image, function() {
+                imagesLoaded++;
+                if (imagesLoaded >= totalImages) {
+                    // Небольшая задержка перед скрытием для плавности
+                    setTimeout(hideLoadingScreen, 500);
+                }
+            });
+        });
+    }
+
+    // ===== КОНЕЦ ЭКРАНА ЗАГРУЗКИ =====
+
     // Функция для показа кастомного уведомления
     function showSuccessNotification(message) {
         // Создаем элемент уведомления
@@ -399,6 +494,70 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 </script>
+    <!-- Экран загрузки -->
+    <div id="loading-screen" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #dfddb5, #eeebdf);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    ">
+        <div id="loading-content" style="
+            text-align: center;
+            color: #000;
+            font-family: 'Montserrat', Arial, sans-serif;
+        ">
+            <div id="loading-spinner" style="
+                width: 60px;
+                height: 60px;
+                border: 4px solid rgba(228, 178, 60, 0.3);
+                border-top: 4px solid #e4b23c;
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+                margin: 0 auto 20px;
+            "></div>
+            <h2 style="
+                font-size: 24px;
+                font-weight: 300;
+                margin: 0 0 10px 0;
+                letter-spacing: 2px;
+            ">Загрузка...</h2>
+            <p style="
+                font-size: 16px;
+                font-weight: 300;
+                margin: 0;
+                opacity: 0.8;
+            ">Пожалуйста подождите</p>
+        </div>
+    </div>
+
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            #loading-content h2 {
+                font-size: 20px !important;
+            }
+            #loading-content p {
+                font-size: 14px !important;
+            }
+            #loading-spinner {
+                width: 50px !important;
+                height: 50px !important;
+                border-width: 3px !important;
+            }
+        }
+    </style>
   </body></html>
 
 
