@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 // ===== КОНФИГУРАЦИЯ (перенесите в переменные окружения на продакшене) =====
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8592554071:AAHr9eA_RBeqKuctNudbvYn3_VUpGK7m7BY';
-const CHAT_ID = process.env.TELEGRAM_CHAT_ID || '654643546';
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN 
+const CHAT_ID = process.env.TELEGRAM_CHAT_ID 
 const PORT = process.env.PORT || 3000;
 // ===========================================================================
 
