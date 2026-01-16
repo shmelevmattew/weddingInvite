@@ -405,10 +405,6 @@ document.addEventListener('DOMContentLoaded', function() {
             sendButton.disabled = true;
             sendButton.textContent = 'Отправка...';
 
-            // Отправляем данные в Telegram бота
-            const botToken = '8592554071:AAHr9eA_RBeqKuctNudbvYn3_VUpGK7m7BY';
-            const chatId = '654643546';
-
             // Форматируем сообщение для Telegram
             let message = '🎉 *Новая анкета гостя!*\n\n';
             message += `👤 *Имя и Фамилия:* ${guestName}\n`;
@@ -438,17 +434,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 message += `⚠️ *Аллергии/предпочтения:* ${allergiesInfo}\n`;
             }
 
-            // Отправляем сообщение в Telegram
-            fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+            // Отправляем через безопасную серверную функцию (токен на сервере)
+            fetch('/api/send-telegram', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    chat_id: chatId,
-                    text: message,
-                    parse_mode: 'Markdown'
-                })
+                body: JSON.stringify({ message })
             })
             .then(response => response.json())
             .then(data => {
